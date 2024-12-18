@@ -1,7 +1,7 @@
 ﻿
 //The table must have the class name "table-repeater"
 //The repeated row must have the class name "repeat-row"
-
+//Test
 (function ($) {
     $.fn.tableRepeater = function (options) {
         var settings = $.extend({
