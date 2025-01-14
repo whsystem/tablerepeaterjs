@@ -14,7 +14,6 @@
     .table-repeater td, .table-repeater th {
         border: 1px solid #ddd;
         padding: 1px 5px 1px 5px;
-        height: 40px;
         font-size: 16px;
         position: relative;
         overflow: hidden;
@@ -30,6 +29,7 @@
         border: none;
         box-sizing: border-box;
         outline: none;
+        min-height: 40px;
     }
 .row-error-border {
     border: 2px solid #edcece !important;
@@ -43,6 +43,9 @@
     border-radius: 5px;
     pointer-events: none; /* Makes sure it doesn't interfere with text */
 }
+    .validationError{
+        display:block;
+    }
 .table-repeater th {
     user-select: none;
 }
