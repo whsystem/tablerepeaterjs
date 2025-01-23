@@ -145,11 +145,11 @@
                         }
                  
                     };
-                    formValidator.settings.errorPlacement = function (element) {
-                        return true;
-                    };
-                    formValidator.settings.invalidHandler = function (event, validator) {
-                        
+                    formValidator.settings.errorPlacement = function (error,element) {
+                        if($(element).closest('td').length > 0){
+                              return;
+                        }
+                        error.insertAfter(element);
                     };
                 }
             }
