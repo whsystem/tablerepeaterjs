@@ -149,7 +149,12 @@
                         if($(element).closest('td').length > 0){
                               return;
                         }
-                        error.insertAfter(element);
+                       if (element.hasClass('select2-hidden-accessible')) {
+                            error.insertAfter(element.next('.select2')); // Insert error after the Select2 container
+                        } else {
+                            error.insertAfter(element); // Default behavior
+                        }
+                       
                     };
                 }
             }
