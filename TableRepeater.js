@@ -13,6 +13,7 @@
             select2Configurations: {}, 
             onInputChange: null, 
             onAdd: null,
+            onDelete: null,
             columnsResizable: false,
             fileConfig: null,
             onInvalid:null
@@ -73,6 +74,9 @@
                     firstRowClone = $row.clone();
                     $row.remove();
 
+                }
+                if (typeof settings.onDelete === 'function') {
+                    settings.onDelete();
                 }
             });
 
