@@ -181,7 +181,7 @@
             //empty inputs except hidden for specific row
             function emptyRowInputs(newRow) {
                 newRow.find('input, select, textarea').each(function () {
-                    if ($(this).attr('type') !== 'hidden' && $(this).attr('type') !== 'checkbox') {
+                    if ($(this).attr('type') !== 'checkbox') {
                         $(this).val('').trigger('change');
                         //.trigger('change')
                     }
