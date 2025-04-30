@@ -9,7 +9,7 @@
             firstRowRemovable: false,
             addButton: '.add-row',
             removeButton: '.remove-row',
-            maxRows: 10,
+            maxRows: 1000,
             select2Configurations: {}, 
             onInputChange: null, 
             onAdd: null,
